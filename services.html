@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/hover-min.css" media="all">
     <link rel="stylesheet" href="css/common.css">
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/services.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/slick-theme.css">
@@ -21,54 +21,55 @@
 
 
 </head>
+
 <body>
 
-<div class="container-fluid main-page" id="home-page">
-    <div class="section-1" id="h-section-1">
-        <div class="fixed-top-bar" id="fixed-top-bar">
-            <div class="nav-part row g-0">
-                <div class="col-lg-6">
-                    <div class="logo-part">
-                        <img src="images/logo.svg" width="378" height="52" alt="Dr Bharathi Rao's Logo"/>
-                    </div>
+<div class="container-fluid main-page" id="about-page">
+
+    <!--    Fixed top bar   -->
+    <div class="fixed-top-bar">
+        <div class="nav-part row g-0">
+            <div class="col-lg-6">
+                <div class="logo-part">
+                    <img src="images/logo.svg" width="378" height="52" alt="Dr Bharathi Rao's Logo"/>
                 </div>
-                <div class="col-lg-6">
-                    <div class="nav-area">
-                        <div class="nav-item">
-                            <p>About Us</p>
-                        </div>
-                        <div class="nav-item services-nav" id="services-nav-click" onclick="toggleServicesDropdown()">
-                            <p>Services
-                                <span>
-                                    <img src="images/service-arrow.svg" height="11" width="20" alt="arrow icon"/>
-                                </span>
-                            </p>
-                        </div>
-                        <div class="nav-item">
-                            <p>Contact us</p>
-                        </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="nav-area">
+                    <div class="nav-item">
+                        <p>About Us</p>
+                    </div>
+                    <div class="nav-item services-nav" id="services-nav-click" onclick="toggleServicesDropdown()">
+                        <p>Services
+                            <span>
+                                <img src="images/service-arrow.svg" height="11" width="20" alt="arrow icon"/>
+                            </span>
+                        </p>
+                    </div>
+                    <div class="nav-item">
+                        <p>Contact us</p>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="services-dropdown" id="services-dropdown">
-<!--            <div class="services-item">-->
-<!--                <img src="images/ser1.svg" width="27" height="22" alt="services 1">-->
-<!--                <p>Post Hospitalization Rehab</p>-->
-<!--            </div>-->
+    </div>
+    <div class="services-dropdown" id="services-dropdown">
+        <!--            <div class="services-item">-->
+        <!--                <img src="images/ser1.svg" width="27" height="22" alt="services 1">-->
+        <!--                <p>Post Hospitalization Rehab</p>-->
+        <!--            </div>-->
 
-<!--            HTML for services will be Added from JS       -->
+        <!--            HTML for services will be Added from JS       -->
 
-        </div>
-        <div class="banner-image">
-            <img class="banner-img" src="images/home01.png" alt="Dr Bharathi rao's banner"/>
-        </div>
-        <div class="banner-card">
-            <h1>A Culture of Healing</h1>
-            <h2>like never before</h2>
-        </div>
     </div>
 
+
+
+
+
+
+
+    <!--   Footer and Map    -->
     <div class="footer-map">
 
         <div class="footer-form-part">
@@ -104,15 +105,20 @@
             <h4>© 2019 Dr.Bharathirao’s. All rights reserved.</h4>
         </div>
     </div>
+
 </div>
+
 
 <!--    Google Maps-->
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&libraries=&v=weekly&channel=2" async></script>
 
+
 </body>
+
 <!--    JS files-->
 <script src="js/jquery-3.6.0.min.js"></script>
 <script src="js/bootstrap.bundle.min.js"></script>
 <script src="js/slick.min.js"></script>
 <script src="js/index.js"></script>
+
 </html>

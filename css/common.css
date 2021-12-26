@@ -1,0 +1,185 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+@font-face {
+    font-family: Baskerville;
+    src: url("../fonts/BASKVILL.TTF");
+}
+
+h1 {
+    font-family: Baskerville, sans-serif;
+    color: #E30230;
+}
+
+h2, h3, h4, h5, h6, p, small {
+    font-family: Barlow, sans-serif;
+    color: #171717;
+}
+
+.main-page {
+    padding: 0;
+    margin: 0;
+}
+
+/* Top Bar Code */
+
+.fixed-top-bar {
+    position: fixed;
+    background-color: #fff;
+    width: 85%;
+    height: 15%;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    box-shadow: 0 0 6px #00000029;
+}
+
+.logo-part img {
+    width: 25%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 3%;
+}
+
+.nav-area {
+    display: flex;
+    justify-content: space-evenly;
+    width: 95%;
+}
+
+.nav-item p {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: large;
+    font-weight: 300;
+}
+
+.nav-item {
+    cursor: pointer;
+}
+
+.services-nav span img {
+    width: 15px;
+    margin-left: 5px;
+}
+
+
+/* Services Dropdown */
+
+.services-dropdown {
+    /*padding-top: 10%;*/
+    width: 50%;
+    background-color: #ffffff;
+    position: fixed;
+    right: 10%;
+    display: none;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    z-index: 998;
+}
+
+.services-item {
+    background-color: #DA0023;
+    display: flex;
+    border-radius: 2px;
+    margin: 0 10px 2% 10px;
+    cursor: pointer;
+}
+
+.services-item img {
+    margin: 5px 10px;
+}
+
+.services-item p {
+    color: #fff;
+    margin: 5px 10px;
+}
+
+
+
+/* Footer and Map */
+
+.map-part {
+    height: 600px;
+    width: 100%;
+    background-color: #ebebeb;
+}
+
+.footer-part {
+    width: 55%;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 5% 0;
+}
+
+.footer-part h4 {
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+.footer-nav h4 {
+    margin-bottom: 1.5rem;
+}
+
+.footer-address {
+    margin-top: 2%;
+}
+
+.footer-bar h4 {
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 3%;
+}
+
+.footer-form-part {
+    height: 840px;
+    width: 45%;
+    position: absolute;
+    right: 40px;
+    background-color: #ffffff;
+    z-index: 99;
+    margin-top: -10px;
+}
+
+.f-form {
+    height: 760px;
+    box-shadow: 0 0 6px #00000029;
+    padding: 12% 10%;
+}
+
+.f-form h4 {
+    font-weight: 300;
+
+}
+
+.f-form h1 {
+
+}
+
+.f-icons-text {
+    display: flex;
+    justify-content: space-between;
+    margin: 5% auto;
+    width: 95%;
+}
+
+.f-icon {
+    display: flex;
+}
+
+.f-icon img {
+    width: 25px;
+    height: 25px;
+    margin-right: 45%;
+}
+
+.f-text h4 {
+    font-weight: 300;
+}
