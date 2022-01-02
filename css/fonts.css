@@ -6,3 +6,12 @@
 .f-form h1 {
     font-size: 50px;
 }
+h5 {
+    font: normal normal normal 24px Barlow;
+    font-weight: 300;
+    word-spacing: 4px;
+    line-height: 30px;
+}
+h2 {
+    font-weight: 300;
+}

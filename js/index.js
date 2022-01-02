@@ -113,3 +113,23 @@ function initMap() {
 
 
 }
+
+// slider code
+
+$('#slick-home1').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: false,
+    infinite: false,
+    dots:false,
+    arrows:false
+});
+
+$('#slick-home2').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: false,
+    infinite: false,
+    dots:false,
+    arrows:false
+});

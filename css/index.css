@@ -28,8 +28,25 @@
     margin-top: 5%;
 }
 
-.banner-card h2 {
-   font-weight: 300;
+.card1 {
+    background-color: #171717;
+    width: 360px !important;
 }
 
+.card1 h4 {
+    color: white;
+    font-size: 30px;
+    font-weight: 300;
+    text-align: center;
+    padding: 16% 0% 0% 0%;
+    letter-spacing: 1px;
+}
 
+.section-3 h5 {
+    padding: 1% 8% 4% 8%;
+}
+
+.section-5 p {
+    font: italic normal 600 26px/26px Barlow;
+    line-height: 40px;
+}
