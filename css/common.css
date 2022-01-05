@@ -14,7 +14,7 @@ h1 {
     color: #E30230;
 }
 
-h2, h3, h4, h5, h6, p, small {
+h2, h3, h4, h5, h6, p, small, label, button {
     font-family: Barlow, sans-serif;
     color: #171717;
 }

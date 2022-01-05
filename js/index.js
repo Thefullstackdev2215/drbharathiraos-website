@@ -12,6 +12,14 @@ $(document).ready(function() {
 
     let servicesDropdown = document.getElementById('services-dropdown');
 
+    let servicesBody = document.getElementById('services-body');
+
+    if (servicesBody) {
+        console.log("came here");
+        servicesBody.style.paddingTop = fixedTopBarHeight + 80 + 'px';
+
+    }
+
     servicesDropdown.style.paddingTop = fixedTopBarHeight + 10 + 'px';
 
     let servicesArray = [
