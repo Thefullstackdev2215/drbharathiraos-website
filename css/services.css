@@ -53,7 +53,7 @@
 
 .red-heading {
     color: #E30230;
-    font-weight: 500;
+    font-weight: 500 !important;
     font-size: x-large;
 }
 
