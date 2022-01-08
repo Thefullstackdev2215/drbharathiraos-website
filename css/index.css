@@ -50,3 +50,38 @@
     font: italic normal 600 26px/26px Barlow;
     line-height: 40px;
 }
+
+.section-2 {
+    margin-bottom: 5%;
+}
+
+.s-2-content {
+    width: 85%;
+    margin-left: auto;
+    margin-right: 30px;
+}
+
+.s-2-wheel-chair img {
+    width: 100%;
+    height: auto;
+}
+
+
+.section-3 {
+    margin-bottom: 5%;
+}
+
+
+.s-4-image img {
+    width: 100%;
+    height: auto;
+}
+
+.s-4-content {
+    width: 88%;
+    margin-left: auto;
+}
+
+.s-4-content h5 {
+    line-height: 2;
+}
