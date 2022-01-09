@@ -127,8 +127,7 @@ function initMap() {
 $('#slick-home1').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: true,
-    speed: 40000,
+    autoplay: false,
     infinite: true,
     dots:false,
     arrows:false
@@ -137,8 +136,7 @@ $('#slick-home1').slick({
 $('#slick-home2').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: true,
-    speed: 40000,
+    autoplay: false,
     infinite: true,
     dots:false,
     arrows:false
@@ -148,8 +146,10 @@ $('#slick-banner').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    speed: 40000,
+    autoplaySpeed: 2000,
     infinite: true,
+    fade: true,
+    cssEase: 'linear',
     dots:true,
     arrows:false
 });
@@ -157,8 +157,7 @@ $('#slick-banner').slick({
 $('#slick-service').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: true,
-    speed: 40000,
+    autoplay: false,
     infinite: true,
     dots:false,
     arrows:false
