@@ -141,3 +141,21 @@ $('#slick-home2').slick({
     dots:false,
     arrows:false
 });
+
+$('#slick-banner').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: false,
+    infinite: false,
+    dots:true,
+    arrows:false
+});
+
+$('#slick-service').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: false,
+    infinite: false,
+    dots:false,
+    arrows:false
+});
