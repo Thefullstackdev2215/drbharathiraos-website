@@ -129,7 +129,7 @@ $('#slick-home1').slick({
     slidesToScroll: 1,
     autoplay: true,
     speed: 40000,
-    infinite: false,
+    infinite: true,
     dots:false,
     arrows:false
 });
@@ -139,7 +139,7 @@ $('#slick-home2').slick({
     slidesToScroll: 1,
     autoplay: true,
     speed: 40000,
-    infinite: false,
+    infinite: true,
     dots:false,
     arrows:false
 });
@@ -149,7 +149,7 @@ $('#slick-banner').slick({
     slidesToScroll: 1,
     autoplay: true,
     speed: 40000,
-    infinite: false,
+    infinite: true,
     dots:true,
     arrows:false
 });
@@ -159,7 +159,7 @@ $('#slick-service').slick({
     slidesToScroll: 1,
     autoplay: true,
     speed: 40000,
-    infinite: false,
+    infinite: true,
     dots:false,
     arrows:false
 });
