@@ -98,3 +98,19 @@
 .nav-hamburger-mobile {
     display: none;
 }
+
+.slick-mobile-1 {
+    display: none;
+}
+
+.slick-web-1 {
+    display: block;
+}
+
+.slick-mobile-2 {
+    display: none;
+}
+
+.slick-web-2 {
+    display: block;
+}
