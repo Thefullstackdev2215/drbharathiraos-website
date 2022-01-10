@@ -26,5 +26,82 @@
         display: none;
     }
 
+    .slick-web-1 {
+        display: none;
+    }
+
+    .slick-mobile-1 {
+        display: block;
+        text-align: -webkit-center;
+    }
+
+    .card1 {
+        background-color: #171717;
+        width: 264px !important;
+        margin-bottom: 6%;
+    }
+
+    .card1 h4 {
+        font-size: 22px;
+        padding: 20% 0% 20% 0%;
+    }
+
+    .section-2 h1 {
+        font-size: 40px;
+    }
+
+    .section-2 h2 {
+        font-size: 30px;
+    }
+
+    .section-2 h5 {
+        text-align: center;
+        font-size: 22px;
+    }
+
+    .section-3 h1 {
+        font-size: 48px;
+        padding: 6% 6% 6% 6%;
+    }
+
+    .section-3 h2 {
+        font-size: 30px;
+        padding: 6% 10% 6% 10%;
+    }
+
+    .section-4 h2 {
+        font-size: 30px;
+    }
+
+    .section-4 h1 {
+        font-size: 48px;
+        padding: 6% 18% 6% 0%;
+        text-align: center;
+    }
+
+    .s-4-content h5 {
+        line-height: 1;
+    }
+
+    .section-5 h1 {
+        font-size: 48px;
+        padding: 6% 6% 6% 6%;
+    }
+
+    .slick-web-2 {
+        display: none;
+    }
+
+    .slick-mobile-2 {
+        display: block;
+        text-align: -webkit-center;
+    }
+
+    .section-5 p {
+        font: italic normal 600 32px/32px Barlow;
+        line-height: 46px;
+        padding: 6% 6% 6% 6%;
+    }
+
 
 }
