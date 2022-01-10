@@ -11,7 +11,7 @@
     .banner-card {
         width: 85%;
         height: 40vh;
-        transform: translateY(-100%);
+        /*transform: translateY(-100%);*/
     }
 
     .banner-card h1 {
