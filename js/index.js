@@ -19,7 +19,7 @@ $(document).ready(function() {
         sideNavMobileBody       = document.getElementById('side-nav-mobile');
 
     if (servicesBody) {
-        console.log("came here");
+
         servicesBody.style.paddingTop = fixedTopBarHeight + 80 + 'px';
 
     }
@@ -50,6 +50,9 @@ $(document).ready(function() {
 
     for (let i = 0; i < servicesArray.length; i++ ) {
 
+        let servicesAnchor = document.createElement('a');
+        servicesAnchor.href = `services.html#services-item-${i + 1}`;
+
         let servicesItem = document.createElement('div');
         servicesItem.classList.add('services-item');
 
@@ -65,13 +68,18 @@ $(document).ready(function() {
         servicesItem.appendChild(servicesImg);
         servicesItem.appendChild(servicesText);
 
-        servicesDropdown.appendChild(servicesItem);
+        servicesAnchor.appendChild(servicesItem);
+
+        servicesDropdown.appendChild(servicesAnchor);
 
     }
 
     // For Mobile
 
     for (let i = 0; i < servicesArray.length; i++ ) {
+
+        let servicesAnchor = document.createElement('a');
+        servicesAnchor.href = `services.html#services-item-${i + 1}`;
 
         let servicesItem = document.createElement('div');
         servicesItem.classList.add('services-item-mobile');
@@ -88,9 +96,10 @@ $(document).ready(function() {
         servicesItem.appendChild(servicesImg);
         servicesItem.appendChild(servicesText);
 
-        servicesDropdownMobile.appendChild(servicesItem);
+        servicesAnchor.appendChild(servicesItem);
 
-
+        servicesDropdown.appendChild(servicesAnchor);
+        
     }
 
     document.getElementById("services-nav-click").addEventListener('click',function(event){

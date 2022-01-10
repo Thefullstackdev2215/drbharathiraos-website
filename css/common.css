@@ -20,6 +20,9 @@ h2, h3, h4, h5, h6, p, small, label, button {
     color: #171717;
 }
 
+a {
+    text-decoration: none;
+}
 .main-page {
     padding: 0;
     margin: 0;
