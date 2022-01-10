@@ -99,9 +99,9 @@ $(document).ready(function() {
 
 
     $('#nav-hamburger').click(function(){
-        $('#nav-hamburger').toggleClass('open');
+        $(this).toggleClass('open');
 
-        if ($('#nav-hamburger').hasClass('open')) {
+        if ($(this).hasClass('open')) {
             // disableScroll();
             $('#home-page').fadeOut(300);
             $('#side-menu-page-mobile').fadeIn(300);
@@ -110,6 +110,54 @@ $(document).ready(function() {
             // enableScroll();
             $('#side-menu-page-mobile').fadeOut(300);
             $('#home-page').fadeIn(300);
+
+        }
+    });
+
+    $('#nav-hamburger-about').click(function(){
+        $(this).toggleClass('open');
+
+        if ($(this).hasClass('open')) {
+            // disableScroll();
+            $('#about-page').fadeOut(300);
+            $('#side-menu-page-mobile').fadeIn(300);
+
+        } else {
+            // enableScroll();
+            $('#side-menu-page-mobile').fadeOut(300);
+            $('#about-page').fadeIn(300);
+
+        }
+    });
+
+    $('#nav-hamburger-contact').click(function(){
+        $(this).toggleClass('open');
+
+        if ($(this).hasClass('open')) {
+            // disableScroll();
+            $('#contact-page').fadeOut(300);
+            $('#side-menu-page-mobile').fadeIn(300);
+
+        } else {
+            // enableScroll();
+            $('#side-menu-page-mobile').fadeOut(300);
+            $('#contact-page').fadeIn(300);
+
+        }
+    });
+
+    $('#nav-hamburger-services').click(function(){
+        $(this).toggleClass('open');
+
+        if ($(this).hasClass('open')) {
+            // disableScroll();
+            $('#services-page').fadeOut(300);
+            $('#side-menu-page-mobile').fadeIn(300);
+
+        } else {
+            // enableScroll();
+            $('#side-menu-page-mobile').fadeOut(300);
+            $('#services-page').fadeIn(300);
 
         }
     });

@@ -23,7 +23,7 @@
     }
 
 
-    #nav-hamburger {
+    .nav-hamburger-mobile {
         width: 8%;
         height: 0px;
         /*position: relative;*/
@@ -41,7 +41,7 @@
         cursor: pointer;
     }
 
-    #nav-hamburger span {
+    .nav-hamburger-mobile span {
         display: block;
         position: absolute;
         height: 2px;
@@ -60,39 +60,39 @@
         transition: .25s ease-in-out;
     }
 
-    #nav-hamburger span:nth-child(1) {
+    .nav-hamburger-mobile span:nth-child(1) {
         top: 0;
     }
 
-    #nav-hamburger span:nth-child(2),#nav-hamburger span:nth-child(3) {
+    .nav-hamburger-mobile span:nth-child(2), .nav-hamburger-mobile span:nth-child(3) {
         top: 10px;
     }
 
-    #nav-hamburger span:nth-child(4) {
+    .nav-hamburger-mobile span:nth-child(4) {
         top: 20px;
     }
 
-    #nav-hamburger.open span:nth-child(1) {
+    .nav-hamburger-mobile.open span:nth-child(1) {
         top: 20px;
         width: 0;
         left: 50%;
     }
 
-    #nav-hamburger.open span:nth-child(2) {
+    .nav-hamburger-mobile.open span:nth-child(2) {
         -webkit-transform: rotate(45deg);
         -moz-transform: rotate(45deg);
         -o-transform: rotate(45deg);
         transform: rotate(45deg);
     }
 
-    #nav-hamburger.open span:nth-child(3) {
+    .nav-hamburger-mobile.open span:nth-child(3) {
         -webkit-transform: rotate(-45deg);
         -moz-transform: rotate(-45deg);
         -o-transform: rotate(-45deg);
         transform: rotate(-45deg);
     }
 
-    #nav-hamburger.open span:nth-child(4) {
+    .nav-hamburger-mobile.open span:nth-child(4) {
         top: 20px;
         width: 0;
         left: 50%;
@@ -101,7 +101,6 @@
 
     /* Side menu code */
 
-
     .side-menu-page-mobile {
         display: none;
         height: 100vh;
@@ -109,18 +108,72 @@
         background-color: #ffffff;
     }
 
-
-
     .slick-slide {
         margin-right: 0;
     }
 
+    .footer-mobile {
+        display: block;
+    }
 
+    .f-icons-text {
+        display: block;
+    }
 
+    .footer-nav-mobile {
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
 
+    .footer-nav-mobile h4 {
+        text-align: center;
+        font-size: 35px;
+        line-height: 2.5;
+        font-weight: 400;
+    }
 
     .f-icon {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    .f-icon img {
+        margin-right: 0;
+        margin-bottom: 10%;
+        margin-top: 15%;
+    }
+
+    .f-text {
         display: none;
+    }
+
+    .footer-address-mobile h4 {
+        text-align: center;
+        font-size: 30px;
+        font-weight: 300;
+        margin: 15% 6%;
+        line-height: 1.5;
+    }
+
+    .footer-mobile-bar h4 {
+        text-align: center;
+        font-size: 30px;
+        font-weight: 300;
+        margin: 20% auto;
+        line-height: 1.5;
+        padding-bottom: 15%;
+    }
+
+
+    .footer-form-part {
+        width: 90%;
+        position: absolute;
+        right: 0;
+        left: 0;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50%;
     }
 
 
