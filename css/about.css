@@ -30,6 +30,50 @@
     font-weight: 500;
 }
 
+.s-2-vision-row {
+    width: 85%;
+    margin: 0 auto;
+}
+
+.s-2-vision-text {
+    margin: 35% auto;
+}
+
+.s-2-ban-image img {
+    width: 90%;
+    margin-top: 20%;
+    margin-left: auto;
+    display: block;
+}
+
+.s-2-values-row {
+    /*width: 100%;*/
+    /*margin: 0 auto;*/
+    margin-left: 8%;
+}
+
+.large-heading {
+    font-size: 54px;
+
+}
+
+.section-3 h5 {
+    line-height: 1.5;
+}
+
+
+
+.s-2-values-text h5 {
+    line-height: 1.5;
+}
+
+.s-2-values-image img {
+    width: 95%;
+    margin-left: auto;
+    display: block;
+    margin-top: 10%;
+}
+
 .section-4-red-card {
     background-color: #E30230;
     border-radius: 20px;
@@ -49,4 +93,8 @@
     color: white;
     font-weight: 500;
     font: normal normal normal 62px/91px Blastyes;
+}
+
+.margin-div {
+    margin: 10%;
 }

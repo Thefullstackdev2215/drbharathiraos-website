@@ -1,0 +1,58 @@
+/* Mobile */
+@media (max-width: 575.98px) {
+
+    .banner-img {
+        height: 100vh;
+    }
+
+    .banner-card {
+        width: 90%;
+        height: 40vh;
+    }
+
+    .banner-card h1 {
+        margin-top: 15%;
+    }
+
+    .s-2-vision-text {
+        margin: 20% auto;
+        text-align: center;
+    }
+
+    .s-2-ban-image img {
+        margin-top: 0;
+    }
+
+    .large-heading {
+        text-align: center;
+    }
+
+
+    .s-2-values-row {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .s-2-values-heading {
+        width: 85%;
+        margin: 0 auto;
+    }
+
+    .s-2-values-text {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .s-2-values-image img {
+        width: 100%;
+    }
+
+    .section-4-red-card {
+        margin: 5%!important;
+    }
+
+    .section-4 h5 {
+        font-weight: 300;
+    }
+
+}

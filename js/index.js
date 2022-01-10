@@ -246,16 +246,10 @@ window.onclick = function(event) {
 
 function initMap() {
 
-    const location = { lat: 18.523537, lng: 77.799380 };
-
-    const
-        location1 = { lat: 18.522505, lng: 77.795504 },
-        location2 = { lat: 18.529319, lng: 77.795069 },
-        location3 = { lat: 18.529608, lng: 77.804825 },
-        location4 = { lat: 18.518944, lng: 77.805521 };
+    const location = { lat: 17.33204096450199, lng: 78.72420609820755 };
 
     const map = new google.maps.Map(document.getElementById("map"), {
-        zoom: 12,
+        zoom: 15,
         center: location,
     });
 
