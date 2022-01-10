@@ -24,44 +24,77 @@
 
 <body>
 
-<div class="container-fluid main-page" id="about-page">
 
-    <!--    Fixed top bar   -->
-    <div class="fixed-top-bar">
-        <div class="nav-part row g-0">
-            <div class="col-lg-6">
-                <div class="logo-part">
-                    <img src="images/logo.svg" width="378" height="52" alt="Dr Bharathi Rao's Logo"/>
+<div class="fixed-top-bar" id="fixed-top-bar">
+    <div class="nav-part row g-0">
+        <div class="col-lg-6">
+            <div class="logo-part">
+                <img src="images/logo.svg" width="378" height="52" alt="Dr Bharathi Rao's Logo"/>
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <div class="nav-area">
+                <div class="nav-item">
+                    <p>About Us</p>
+                </div>
+                <div class="nav-item services-nav" id="services-nav-click" onclick="toggleServicesDropdown()">
+                    <p>Services
+                        <span>
+                            <img class="services-arrow" id="services-arrow" src="images/service-arrow.svg" height="11" width="20" alt="arrow icon"/>
+                        </span>
+                    </p>
+                </div>
+                <div class="nav-item">
+                    <p>Contact us</p>
                 </div>
             </div>
-            <div class="col-lg-6">
-                <div class="nav-area">
-                    <div class="nav-item">
-                        <p>About Us</p>
-                    </div>
-                    <div class="nav-item services-nav" id="services-nav-click" onclick="toggleServicesDropdown()">
-                        <p>Services
-                            <span>
-                                <img src="images/service-arrow.svg" height="11" width="20" alt="arrow icon"/>
-                            </span>
-                        </p>
-                    </div>
-                    <div class="nav-item">
-                        <p>Contact us</p>
-                    </div>
-                </div>
+            <div id="nav-hamburger" class="nav-hamburger-mobile">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
         </div>
     </div>
-    <div class="services-dropdown" id="services-dropdown">
-        <!--            <div class="services-item">-->
-        <!--                <img src="images/ser1.svg" width="27" height="22" alt="services 1">-->
-        <!--                <p>Post Hospitalization Rehab</p>-->
-        <!--            </div>-->
+</div>
+<div class="services-dropdown" id="services-dropdown">
+    <!--            <div class="services-item">-->
+    <!--                <img src="images/ser1.svg" width="27" height="22" alt="services 1">-->
+    <!--                <p>Post Hospitalization Rehab</p>-->
+    <!--            </div>-->
 
-        <!--            HTML for services will be Added from JS       -->
+    <!--            HTML for services will be Added from JS       -->
+</div>
 
+<div class="side-menu-page-mobile" id="side-menu-page-mobile">
+    <div class="side-nav-options" id="side-nav-mobile">
+        <div class="side-nav-ele">
+            <h2>About Us</h2>
+        </div>
+        <div class="side-nav-ele side-nav-ele-mt" onclick="toggleServicesDropdownSideMenuMobile()">
+            <h2>Services
+                <span>
+                <img class="services-arrow" id="services-arrow-2" src="images/service-arrow.svg" height="11" width="20" alt="arrow icon"/>
+            </span>
+            </h2>
+        </div>
+        <div class="services-dropdown-mobile" id="services-dropdown-2">
+            <!--            HTML for services will be Added from JS          -->
+        </div>
+        <div class="side-nav-ele side-nav-ele-mt side-nav-ele-mb">
+            <h2>Contact Us</h2>
+        </div>
     </div>
+    <div class="side-menu-icons" id="side-menu-icons-mobile">
+        <img src="images/linkedin.svg" width="38" height="36" alt="Linked In"/>
+        <img src="images/facebook-app-symbol.svg" width="38" height="36" alt="Facebook"/>
+        <img src="images/instagram.svg" width="38" height="36" alt="Instagram"/>
+        <img src="images/twitter.svg" width="38" height="36" alt="Twitter"/>
+    </div>
+</div>
+
+
+<div class="container-fluid main-page" id="about-page">
 
     <div class="c-section-1">
         <div class="banner-bg">
