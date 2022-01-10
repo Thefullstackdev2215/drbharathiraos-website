@@ -112,6 +112,11 @@
         margin-right: 0;
     }
 
+    .footer-desktop {
+        display: none;
+
+    }
+
     .footer-mobile {
         display: block;
     }
