@@ -6,13 +6,17 @@ console.log(screenAvailHeight);
 
 $(document).ready(function() {
 
-    let fixedTopBar = document.getElementById('fixed-top-bar');
+    let fixedTopBar             = document.getElementById('fixed-top-bar'),
 
-    let fixedTopBarHeight = fixedTopBar.offsetHeight;
+        fixedTopBarHeight       = fixedTopBar.offsetHeight,
 
-    let servicesDropdown = document.getElementById('services-dropdown');
+        servicesDropdown        = document.getElementById('services-dropdown'),
 
-    let servicesBody = document.getElementById('services-body');
+        servicesDropdownMobile  = document.getElementById('services-dropdown-2'),
+
+        servicesBody            = document.getElementById('services-body'),
+
+        sideNavMobileBody       = document.getElementById('side-nav-mobile');
 
     if (servicesBody) {
         console.log("came here");
@@ -21,6 +25,10 @@ $(document).ready(function() {
     }
 
     servicesDropdown.style.paddingTop = fixedTopBarHeight + 10 + 'px';
+
+    if (sideNavMobileBody) {
+        sideNavMobileBody.style.paddingTop = fixedTopBarHeight + 50 + 'px';
+    }
 
     let servicesArray = [
         "Post Hospitalization Rehab",
@@ -37,6 +45,8 @@ $(document).ready(function() {
         "Pharmacy",
         "Comprehensive Alternative Integrated Medical Services"
     ];
+
+    // For desktop
 
     for (let i = 0; i < servicesArray.length; i++ ) {
 
@@ -59,26 +69,113 @@ $(document).ready(function() {
 
     }
 
+    // For Mobile
+
+    for (let i = 0; i < servicesArray.length; i++ ) {
+
+        let servicesItem = document.createElement('div');
+        servicesItem.classList.add('services-item-mobile');
+
+        let servicesImg = document.createElement('img');
+        servicesImg.src = 'images/ser' + (i + 1) + '.svg';
+        servicesImg.width = 27;
+        servicesImg.height = 22;
+        servicesImg.alt = 'Services Icon' + (i + 1);
+
+        let servicesText = document.createElement('p');
+        servicesText.innerText = servicesArray[i];
+
+        servicesItem.appendChild(servicesImg);
+        servicesItem.appendChild(servicesText);
+
+        servicesDropdownMobile.appendChild(servicesItem);
+
+
+    }
+
     document.getElementById("services-nav-click").addEventListener('click',function(event){
         event.stopPropagation();
     });
 
 
+    $('#nav-hamburger').click(function(){
+        $('#nav-hamburger').toggleClass('open');
+
+        if ($('#nav-hamburger').hasClass('open')) {
+            // disableScroll();
+            $('#home-page').fadeOut(300);
+            $('#side-menu-page-mobile').fadeIn(300);
+
+        } else {
+            // enableScroll();
+            $('#side-menu-page-mobile').fadeOut(300);
+            $('#home-page').fadeIn(300);
+
+        }
+    });
+
+
 });
+
+function disableScroll() {
+    // Get the current page scroll position
+    let scrollTop =
+        window.pageYOffset - 20 || document.documentElement.scrollTop - 20;
+    let scrollLeft =
+        window.pageXOffset || document.documentElement.scrollLeft;
+
+    // if any scroll is attempted,
+    // set this to the previous value
+    window.onscroll = function() {
+        window.scrollTo(scrollLeft, scrollTop);
+    };
+}
+
+function enableScroll() {
+    window.onscroll = function() {};
+}
+
 
 
 function toggleServicesDropdown() {
 
-    let servicesDropdown = document.getElementById('services-dropdown');
+    let servicesDropdown = document.getElementById('services-dropdown'),
+        servicesArrow    = document.getElementById('services-arrow');
 
     if (servicesDropdown.style.display === 'flex') {
         // servicesDropdown.style.display = 'none';
         // servicesDropdown.style.opacity = '0';
         $("#services-dropdown").fadeOut(300);
+        servicesArrow.style.transform = 'rotate(180deg)';
 
     } else {
         $("#services-dropdown").fadeIn(300);
         servicesDropdown.style.display = 'flex';
+        servicesArrow.style.transform = 'rotate(0deg)';
+
+    }
+
+}
+
+
+function toggleServicesDropdownSideMenuMobile() {
+
+    let servicesDropdown = document.getElementById('services-dropdown-2'),
+        sideMenuIcons    = document.getElementById('side-menu-icons-mobile'),
+        servicesArrow    = document.getElementById('services-arrow-2');
+
+    if (servicesDropdown.style.display === 'block') {
+        // servicesDropdown.style.display = 'none';
+        // servicesDropdown.style.opacity = '0';
+        $("#services-dropdown-2").fadeOut(300);
+        sideMenuIcons.style.position = 'absolute';
+        servicesArrow.style.transform = 'rotate(180deg)';
+
+    } else {
+        $("#services-dropdown-2").fadeIn(300);
+        servicesDropdown.style.display = 'block';
+        sideMenuIcons.style.position = 'static';
+        servicesArrow.style.transform = 'rotate(0deg)'
 
     }
 
@@ -151,7 +248,8 @@ $('#slick-banner').slick({
     fade: true,
     cssEase: 'linear',
     dots:true,
-    arrows:false
+    arrows:false,
+    draggable: false
 });
 
 $('#slick-service').slick({
@@ -162,3 +260,4 @@ $('#slick-service').slick({
     dots:false,
     arrows:false
 });
+

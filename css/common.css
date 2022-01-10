@@ -103,6 +103,76 @@ h2, h3, h4, h5, h6, p, small, label, button {
 }
 
 
+/* Side Menu */
+
+.side-menu-page-mobile {
+    display: none;
+}
+
+.side-nav-options {
+
+}
+
+.side-nav-ele h2 {
+    font-size: 40px;
+    text-align: center;
+    font-weight: 500;
+
+}
+
+.side-nav-ele-mt {
+    margin-top: 25%;
+}
+
+.side-nav-ele-mb {
+    margin-bottom: 10%;
+}
+
+.side-menu-icons {
+    position: absolute;
+    bottom: 5%;
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.side-menu-icons img {
+    margin-bottom: 10%;
+
+}
+
+.services-dropdown-mobile {
+    display: none;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.services-item-mobile {
+    background-color: #DA0023;
+    display: flex;
+    border-radius: 2px;
+    margin: 0 auto 4% auto;
+    cursor: pointer;
+    width: fit-content;
+}
+
+.services-item-mobile img {
+    margin: 5px 10px;
+}
+
+.services-item-mobile p {
+    color: #fff;
+    margin: 5px 10px;
+    font-size: larger;
+}
+
+
+.services-arrow {
+    transform: rotate(180deg);
+    margin-left: 10px;
+}
+
+
 
 /* Footer and Map */
 
