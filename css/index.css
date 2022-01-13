@@ -9,6 +9,36 @@
     overflow-x: hidden;
 }
 
+.banner-image-div {
+    height: 85vh;
+    width: 100vw;
+    background-size: cover;
+}
+
+#banner-image-1 {
+    background-image: url("../images/img1.png");
+}
+
+#banner-image-2 {
+    background-image: url("../images/img2.png");
+}
+
+#banner-image-3 {
+    background-image: url("../images/img3.png");
+}
+
+#banner-image-4 {
+    background-image: url("../images/img4.png");
+}
+
+#banner-image-5 {
+    background-image: url("../images/img5.png");
+}
+
+#banner-image-6 {
+    background-image: url("../images/img6.png");
+}
+
 .banner-img {
     height: 85vh;
     width: 100vw;
