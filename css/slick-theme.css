@@ -195,7 +195,7 @@
 .slick-dots li button {
     font-size: 0;
     line-height: 0;
-    width: 0px;
+    width: 13px;
     height: 13px;
     padding: -141px;
     cursor: pointer;
@@ -203,15 +203,15 @@
     border: 1px solid #000000;
     outline: none;
     background: #000000;
-    border-radius: 50%;
+    border-radius: 100%;
 }
 
 .slick-dots li.slick-active button {
-    opacity: .75;
+    opacity: 1;
     color:#E30230;
     border: #E30230;
     background-color: #E30230;
-    height: 13px;
+    height: 15px;
     width: 15px;
-    border-radius: 50%;
+    border-radius: 100%;
 }

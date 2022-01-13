@@ -35,6 +35,7 @@
 .card1 {
     background-color: #171717;
     width: 360px !important;
+    position: relative;
 }
 
 .card1 h4 {
@@ -42,8 +43,14 @@
     font-size: 30px;
     font-weight: 300;
     text-align: center;
-    padding: 16% 0% 0% 0%;
     letter-spacing: 1px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .section-3 h5 {
@@ -63,12 +70,15 @@
 .s-2-content {
     width: 85%;
     margin-left: auto;
-    margin-right: 30px;
+    margin-right: 20px;
+    margin-top: 10%;
 }
 
 .s-2-wheel-chair img {
-    width: 100%;
+    width: 90%;
     height: auto;
+    display: block;
+    margin-left: auto;
 }
 
 
@@ -89,6 +99,26 @@
 
 .s-4-content h5 {
     line-height: 2;
+}
+
+.s-4-list p {
+    font-weight: 300;
+    line-height: 1.5;
+    font-size: 1.5em;
+}
+
+.section-5 {
+    margin-top: 5%;
+}
+
+.s-italic-text {
+    margin: 5% auto;
+}
+
+.s-italic-text h2 {
+    font-style: italic;
+    line-height: 1.8;
+    font-weight: 600;
 }
 
 .banner-text {

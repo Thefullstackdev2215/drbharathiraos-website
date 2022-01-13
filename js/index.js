@@ -83,6 +83,7 @@ $(document).ready(function() {
 
         let servicesItem = document.createElement('div');
         servicesItem.classList.add('services-item-mobile');
+        // servicesItem.onclick = scrollDownServices();
 
         let servicesImg = document.createElement('img');
         servicesImg.src = 'images/ser' + (i + 1) + '.svg';
@@ -98,11 +99,12 @@ $(document).ready(function() {
 
         servicesAnchor.appendChild(servicesItem);
 
-        servicesDropdown.appendChild(servicesAnchor);
-        
+        servicesDropdownMobile.appendChild(servicesAnchor);
+
     }
 
     document.getElementById("services-nav-click").addEventListener('click',function(event){
+        console.log(event);
         event.stopPropagation();
     });
 
@@ -173,6 +175,7 @@ $(document).ready(function() {
 
 
 });
+
 
 function disableScroll() {
     // Get the current page scroll position
@@ -273,10 +276,10 @@ function initMap() {
 // slider code
 
 $('#slick-home1').slick({
-    slidesToShow: 1,
+    slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: false,
-    infinite: true,
+    infinite: false,
     dots:false,
     arrows:false
 });
@@ -285,7 +288,7 @@ $('#slick-home2').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: false,
-    infinite: true,
+    infinite: false,
     dots:false,
     arrows:false
 });
@@ -294,7 +297,7 @@ $('#slick-banner').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 3000,
     infinite: true,
     fade: true,
     cssEase: 'linear',
@@ -307,7 +310,7 @@ $('#slick-service').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: false,
-    infinite: true,
+    infinite: false,
     dots:false,
     arrows:false
 });
