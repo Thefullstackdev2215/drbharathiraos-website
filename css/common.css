@@ -44,11 +44,12 @@ a {
 }
 
 .logo-part img {
-    width: 25%;
+    width: 10%;
+    height: auto;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    left: 3%;
+    left: 8%;
 }
 
 .nav-area {
