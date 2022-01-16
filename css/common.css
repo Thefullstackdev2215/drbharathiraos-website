@@ -181,6 +181,10 @@ a {
 
 /* Footer and Map */
 
+.footer-map {
+    margin-top: 10%;
+}
+
 .map-part {
     height: 600px;
     width: 100%;

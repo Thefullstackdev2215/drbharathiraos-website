@@ -2,12 +2,20 @@
 
 .services-body {
     /*padding-top: 8%;*/
-    width: 85%;
+    width: 84%;
     margin: 0 auto;
 }
 
+.mobile-only {
+    display: none;
+}
+.desktop-only {
+    display: block;
+}
+
 .service-item {
-    margin-bottom: 10%;
+    /*margin-bottom: 10%;*/
+    /*padding-top: 14%;*/
 }
 
 .s-header-img {
@@ -146,4 +154,29 @@
 
 .services-slick-text {
     font-weight: 600 !important;
+}
+
+.s-center-list {
+    width: 80%;
+    margin: 5% auto;
+}
+
+.bold-text {
+    font-weight: 500;
+}
+
+.s-9-grid-mt {
+    margin-top: 5%;
+}
+
+.mt-2p {
+    margin-top: 2%;
+}
+
+.mt-5p {
+    margin-top: 5%;
+}
+
+.mt-10p {
+    margin-top: 10%;
 }

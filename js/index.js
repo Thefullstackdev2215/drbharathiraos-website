@@ -20,7 +20,7 @@ $(document).ready(function() {
 
     if (servicesBody) {
 
-        servicesBody.style.paddingTop = fixedTopBarHeight + 80 + 'px';
+        // servicesBody.style.paddingTop = fixedTopBarHeight + 80 + 'px';
 
     }
 
@@ -172,6 +172,20 @@ $(document).ready(function() {
 
         }
     });
+
+
+    let servicesPages = document.getElementsByClassName('service-item');
+
+    console.log(servicesPages);
+
+    if (servicesPages.length > 0) {
+
+        for (let service of servicesPages) {
+            console.log(service);
+            service.style.paddingTop = fixedTopBarHeight + 25 + 'px';
+
+        }
+    }
 
 
 });
