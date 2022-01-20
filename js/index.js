@@ -329,3 +329,11 @@ $('#slick-service').slick({
     arrows:false
 });
 
+$('#slick-service1').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: false,
+    infinite: false,
+    dots:false,
+    arrows:false
+});

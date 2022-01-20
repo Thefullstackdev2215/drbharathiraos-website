@@ -119,9 +119,15 @@
 .slick-slide {
     display: none;
     float: left;
-    min-height: 280px;
+    height: 280px;
     margin-right: 40px;
 }
+/*.slick-slide.slick-services1 {*/
+/*    display: none;*/
+/*    float: left;*/
+/*    height: 140px;*/
+/*    margin-right: 40px;*/
+/*}*/
 
 @media (max-width: 575.98px) {
     .slick-slide {

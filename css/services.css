@@ -186,3 +186,35 @@
 .s-mleft-p {
     margin-left: 15%;
 }
+.card2 {
+    background-color: #171717;
+    width: 246px !important;
+    height: 140px;
+    position: relative;
+}
+
+.slider-texts {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card2 h3 {
+    color: white;
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.card2 h4 {
+    color: white;
+    font-size: 24px;
+    font-weight: 300;
+    text-align: center;
+    letter-spacing: 1px;
+}
