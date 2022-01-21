@@ -115,12 +115,14 @@ $(document).ready(function() {
         if ($(this).hasClass('open')) {
             // disableScroll();
             $('#home-page').fadeOut(300);
+            $('#footer-part').fadeOut(300);
             $('#side-menu-page-mobile').fadeIn(300);
 
         } else {
             // enableScroll();
             $('#side-menu-page-mobile').fadeOut(300);
             $('#home-page').fadeIn(300);
+            $('#footer-part').fadeIn(300);
 
         }
     });
@@ -131,12 +133,14 @@ $(document).ready(function() {
         if ($(this).hasClass('open')) {
             // disableScroll();
             $('#about-page').fadeOut(300);
+            $('#footer-part').fadeOut(300);
             $('#side-menu-page-mobile').fadeIn(300);
 
         } else {
             // enableScroll();
             $('#side-menu-page-mobile').fadeOut(300);
             $('#about-page').fadeIn(300);
+            $('#footer-part').fadeIn(300);
 
         }
     });
@@ -147,12 +151,14 @@ $(document).ready(function() {
         if ($(this).hasClass('open')) {
             // disableScroll();
             $('#contact-page').fadeOut(300);
+            $('#footer-part').fadeOut(300);
             $('#side-menu-page-mobile').fadeIn(300);
 
         } else {
             // enableScroll();
             $('#side-menu-page-mobile').fadeOut(300);
             $('#contact-page').fadeIn(300);
+            $('#footer-part').fadeIn(300);
 
         }
     });
@@ -163,12 +169,14 @@ $(document).ready(function() {
         if ($(this).hasClass('open')) {
             // disableScroll();
             $('#services-page').fadeOut(300);
+            $('#footer-part').fadeOut(300);
             $('#side-menu-page-mobile').fadeIn(300);
 
         } else {
             // enableScroll();
             $('#side-menu-page-mobile').fadeOut(300);
             $('#services-page').fadeIn(300);
+            $('#footer-part').fadeIn(300);
 
         }
     });
@@ -182,7 +190,7 @@ $(document).ready(function() {
 
         for (let service of servicesPages) {
             console.log(service);
-            service.style.paddingTop = fixedTopBarHeight + 25 + 'px';
+            service.style.paddingTop = fixedTopBarHeight + 40 + 'px';
 
         }
     }

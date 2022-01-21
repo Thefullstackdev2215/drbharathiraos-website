@@ -119,8 +119,16 @@
 .slick-slide {
     display: none;
     float: left;
-    height: 280px;
+    min-height: 280px;
     margin-right: 40px;
+}
+
+#slick-home1 .slick-slide {
+    /*height: 500px;*/
+}
+
+#slick-service1 .slick-slide {
+    min-height: 140px;
 }
 /*.slick-slide.slick-services1 {*/
 /*    display: none;*/
