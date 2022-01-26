@@ -280,7 +280,7 @@ window.onclick = function(event) {
 
 function initMap() {
 
-    const location = { lat: 17.33204096450199, lng: 78.72420609820755 };
+    const location = { lat: 17.331616492964137, lng: 78.72605271259675 };
 
     const map = new google.maps.Map(document.getElementById("map"), {
         zoom: 15,
@@ -290,6 +290,7 @@ function initMap() {
     const marker = new google.maps.Marker({
         position: location,
         map: map,
+        label: 'Br'
     });
 
 
