@@ -209,25 +209,25 @@
                     <div class="footer-form row g-0">
                         <div class="col-lg-12">
                             <div class="f-form-input-item">
-                                <label class="form-label f-label" for="f-input-name-1">Full Name <sup>*</sup></label>
-                                <input type="text" class="form-control f-input" id="f-input-name-1" placeholder="Your Full Name">
+                                <label class="form-label f-label" for="fa-input-name-1">Full Name <sup>*</sup></label>
+                                <input type="text" class="form-control f-input" id="fa-input-name-1" placeholder="Your Full Name">
                             </div>
                         </div>
                         <div class="col-lg-12">
                             <div class="f-form-input-item">
-                                <label class="form-label f-label" for="f-input-mobile-1">Mobile No. <sup>*</sup></label>
-                                <input type="text" class="form-control f-input" id="f-input-mobile-1" placeholder="+91">
+                                <label class="form-label f-label" for="fa-input-mobile-1">Mobile No. <sup>*</sup></label>
+                                <input type="text" class="form-control f-input" id="fa-input-mobile-1" placeholder="+91">
                             </div>
                         </div>
                         <div class="col-lg-12">
                             <div class="f-form-input-item">
-                                <label class="form-label f-label" for="f-input-query-1">Enter your Query <sup>*</sup></label>
-                                <input type="text" class="form-control f-input" id="f-input-query-1" placeholder="Type your Message">
+                                <label class="form-label f-label" for="fa-input-query-1">Enter your Query <sup>*</sup></label>
+                                <input type="text" class="form-control f-input" id="fa-input-query-1" placeholder="Type your Message">
                             </div>
                         </div>
                     </div>
                     <div class="f-form-send">
-                        <button type="button" class="btn btn-primary f-form-send-btn">
+                        <button type="button" class="btn btn-primary f-form-send-btn" onclick="sendEmail('fa-input-name-1', 'fa-input-mobile-1', 'fa-input-query-1')">
                             SEND
                             <img src="images/send.svg" width="30" height="30" alt="Send">
                         </button>
@@ -237,9 +237,9 @@
             <div class="f-icons-text">
                 <div class="footer-mobile">
                     <div class="footer-nav-mobile">
-                        <h4>About Us</h4>
-                        <h4>Services</h4>
-                        <h4>Contact Us</h4>
+                        <h4><a href="index.html">Home</a></h4>
+                        <h4><a href="services.html">Services</a></h4>
+                        <h4><a href="contact.html">Contact us</a></h4>
                     </div>
                 </div>
                 <div class="f-icon">
@@ -266,9 +266,9 @@
         <div class="footer-desktop">
             <div class="footer-part">
                 <div class="footer-nav">
-                    <h4>About Us</h4>
-                    <h4>Services</h4>
-                    <h4>Contact us</h4>
+                    <h4><a href="index.html">Home</a></h4>
+                    <h4><a href="services.html">Services</a></h4>
+                    <h4><a href="contact.html">Contact us</a></h4>
                 </div>
                 <div class="footer-address">
                     <h4>Near Ramoji Film City,<br/> Behind Mount Opera Batasingaram,<br/> Hayathnagar, Hyderabad,<br/> Telangana 501505</h4>
@@ -283,6 +283,7 @@
 </div>
 
 
+
 <!--    Google Maps-->
 <script src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap&libraries=&v=weekly&channel=2" async></script>
 
@@ -293,6 +294,7 @@
 <script src="js/jquery-3.6.0.min.js"></script>
 <script src="js/bootstrap.bundle.min.js"></script>
 <script src="js/slick.min.js"></script>
+<script src="js/smtp.js"></script>
 <script src="js/index.js"></script>
 
 </html>

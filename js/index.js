@@ -346,3 +346,27 @@ $('#slick-service1').slick({
     dots:false,
     arrows:false
 });
+
+
+
+function sendEmail(full_name, mobile_no, _query) {
+    let fullName = document.getElementById(full_name),
+        mobileNo = document.getElementById(mobile_no),
+        query = document.getElementById(_query),
+        email_body = `Full Name =  ${fullName.value}\n, Mobile No = ${mobileNo.value}\n, query = ${query.value}`
+
+    Email.send({
+        SecureToken : "bd66d423-e04c-4b9d-9618-f9edce610f68",
+        To : 'info@drbharathiraos.com',
+        From : "info@drbharathiraos.com",
+        Subject: "Message from website",
+        Body: email_body,
+    }).then(function (message) {
+            console.log(message, "Mail has been sent successfully");
+
+            fullName.value = '';
+            mobileNo.value = '';
+            query.value = '';
+
+    })
+}

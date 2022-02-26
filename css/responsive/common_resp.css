@@ -135,6 +135,7 @@
         font-size: 35px;
         line-height: 2.5;
         font-weight: 400;
+        cursor: pointer;
     }
 
     .f-icon {
