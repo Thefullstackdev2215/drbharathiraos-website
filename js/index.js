@@ -311,7 +311,15 @@ $('#slick-home1').slick({
                 slidesToScroll: 1,
             }
         },
+        {
+            breakpoint: 1440,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+            }
+        },
     ]
+
 });
 
 $('#slick-home2').slick({
@@ -322,7 +330,23 @@ $('#slick-home2').slick({
     dots:false,
     arrows:true,
     prevArrow: '<button type="button" class="slick-prev">←</button>',
-    nextArrow: '<button type="button" class="slick-next">→</button>'
+    nextArrow: '<button type="button" class="slick-next">→</button>',
+    responsive: [
+        {
+            breakpoint: 1024,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+            }
+        },
+        {
+            breakpoint: 1440,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+            }
+        },
+    ]
 });
 
 $('#slick-banner').slick({
@@ -346,7 +370,23 @@ $('#slick-service').slick({
     dots:false,
     arrows:true,
     prevArrow: '<button type="button" class="slick-prev">←</button>',
-    nextArrow: '<button type="button" class="slick-next">→</button>'
+    nextArrow: '<button type="button" class="slick-next">→</button>',
+    responsive: [
+        {
+            breakpoint: 1024,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+            }
+        },
+        {
+            breakpoint: 1440,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+            }
+        },
+    ]
 });
 
 $('#slick-service1').slick({
@@ -357,7 +397,23 @@ $('#slick-service1').slick({
     dots:false,
     arrows:true,
     prevArrow: '<button type="button" class="slick-prev">←</button>',
-    nextArrow: '<button type="button" class="slick-next">→</button>'
+    nextArrow: '<button type="button" class="slick-next">→</button>',
+    responsive: [
+        {
+            breakpoint: 1024,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+            }
+        },
+        {
+            breakpoint: 1440,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+            }
+        },
+    ]
 });
 
 

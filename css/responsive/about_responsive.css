@@ -7,7 +7,7 @@
 
     .banner-card {
         width: 90%;
-        height: 40vh;
+        min-height: 40vh;
     }
 
     .banner-image-div {
@@ -63,8 +63,8 @@
     }
 
     .section-3 {
-        width: 80%;
-        margin: 0 auto;
+        width: 85%;
+        margin: 2% auto;
     }
 
 }
