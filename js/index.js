@@ -1,9 +1,6 @@
 
 let screenAvailHeight = window.innerHeight;
 
-console.log(screenAvailHeight);
-
-
 $(document).ready(function() {
 
     let fixedTopBar             = document.getElementById('fixed-top-bar'),
@@ -104,7 +101,6 @@ $(document).ready(function() {
     }
 
     document.getElementById("services-nav-click").addEventListener('click',function(event){
-        console.log(event);
         event.stopPropagation();
     });
 
@@ -184,12 +180,9 @@ $(document).ready(function() {
 
     let servicesPages = document.getElementsByClassName('service-item');
 
-    console.log(servicesPages);
-
     if (servicesPages.length > 0) {
 
         for (let service of servicesPages) {
-            console.log(service);
             service.style.paddingTop = fixedTopBarHeight + 40 + 'px';
 
         }
@@ -268,9 +261,11 @@ window.onclick = function(event) {
     if (!event.target.matches('.services-nav')) {
 
         let servicesDropdown = document.getElementById('services-dropdown');
+        let servicesArrow    = document.getElementById('services-arrow');
 
         if (servicesDropdown.style.display === 'flex') {
             $("#services-dropdown").fadeOut(300);
+            servicesArrow.style.transform = 'rotate(180deg)';
 
         }
 
@@ -304,16 +299,30 @@ $('#slick-home1').slick({
     autoplay: false,
     infinite: false,
     dots:false,
-    arrows:true
+    arrows:true,
+    rows: 1,
+    prevArrow: '<button type="button" class="slick-prev">←</button>',
+    nextArrow: '<button type="button" class="slick-next">→</button>',
+    responsive: [
+        {
+            breakpoint: 1024,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+            }
+        },
+    ]
 });
 
 $('#slick-home2').slick({
-    slidesToShow: 1,
+    slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: false,
     infinite: false,
     dots:false,
-    arrows:true
+    arrows:true,
+    prevArrow: '<button type="button" class="slick-prev">←</button>',
+    nextArrow: '<button type="button" class="slick-next">→</button>'
 });
 
 $('#slick-banner').slick({
@@ -326,25 +335,29 @@ $('#slick-banner').slick({
     cssEase: 'linear',
     dots:true,
     arrows:false,
-    draggable: false
+    draggable: false,
 });
 
 $('#slick-service').slick({
-    slidesToShow: 1,
+    slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: false,
     infinite: false,
     dots:false,
-    arrows:true
+    arrows:true,
+    prevArrow: '<button type="button" class="slick-prev">←</button>',
+    nextArrow: '<button type="button" class="slick-next">→</button>'
 });
 
 $('#slick-service1').slick({
-    slidesToShow: 1,
+    slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: false,
     infinite: false,
     dots:false,
-    arrows:true
+    arrows:true,
+    prevArrow: '<button type="button" class="slick-prev">←</button>',
+    nextArrow: '<button type="button" class="slick-next">→</button>'
 });
 
 

@@ -10,6 +10,12 @@
         height: 40vh;
     }
 
+    .banner-image-div {
+        height: 100vh;
+        width: 100vw;
+        background-image: url("../../images/aboutus-mob.png");
+    }
+
     .banner-card h1 {
         margin-top: 15%;
     }
@@ -53,6 +59,12 @@
 
     .section-4 h5 {
         font-weight: 300;
+        font-size: 1.5rem;
+    }
+
+    .section-3 {
+        width: 80%;
+        margin: 0 auto;
     }
 
 }

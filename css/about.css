@@ -18,7 +18,7 @@
     margin-right: auto;
     left: 0;
     right: 0;
-    background-color: #ffffff;
+    background-color: #ffffffcf;
 }
 
 .banner-card h1 {
@@ -96,5 +96,12 @@
 }
 
 .margin-div {
-    margin: 10%;
+    margin: 5%;
+}
+
+.banner-image-div {
+    height: 85vh;
+    width: 100vw;
+    background-size: cover;
+    background-image: url("../images/about01.png");
 }
