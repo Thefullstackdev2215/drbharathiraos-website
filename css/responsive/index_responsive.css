@@ -23,6 +23,30 @@
         margin-top: 12%;
     }
 
+    #banner-image-1 {
+        background-image: url("../../images/img1-mob.png");
+    }
+
+    #banner-image-2 {
+        background-image: url("../../images/img2-mob.png");
+    }
+
+    #banner-image-3 {
+        background-image: url("../../images/img3-mob.png");
+    }
+
+    #banner-image-4 {
+        background-image: url("../../images/img4-mob.png");
+    }
+
+    #banner-image-5 {
+        background-image: url("../../images/img5-mob.png");
+    }
+
+    #banner-image-6 {
+        background-image: url("../../images/img6-mob.png");
+    }
+
     .slick-dots {
         top: 95vh;
     }

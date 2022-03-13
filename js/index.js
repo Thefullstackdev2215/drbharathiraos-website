@@ -304,7 +304,7 @@ $('#slick-home1').slick({
     autoplay: false,
     infinite: false,
     dots:false,
-    arrows:false
+    arrows:true
 });
 
 $('#slick-home2').slick({
@@ -313,7 +313,7 @@ $('#slick-home2').slick({
     autoplay: false,
     infinite: false,
     dots:false,
-    arrows:false
+    arrows:true
 });
 
 $('#slick-banner').slick({
@@ -335,7 +335,7 @@ $('#slick-service').slick({
     autoplay: false,
     infinite: false,
     dots:false,
-    arrows:false
+    arrows:true
 });
 
 $('#slick-service1').slick({
@@ -344,7 +344,7 @@ $('#slick-service1').slick({
     autoplay: false,
     infinite: false,
     dots:false,
-    arrows:false
+    arrows:true
 });
 
 
